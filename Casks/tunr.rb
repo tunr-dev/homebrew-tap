@@ -3,7 +3,7 @@ cask "tunr" do
   name "tunr"
   desc "local → public tunnel tool for Vibecoders"
   homepage "https://tunr.sh"
-  version "0.6.1"
+  version "0.6.2"
 
   livecheck do
     skip "Auto-generated on release."
@@ -13,27 +13,23 @@ cask "tunr" do
 
   on_macos do
     on_intel do
-      url "https://github.com/tunr-dev/tunr/releases/download/v#{version}/tunr_#{version}_darwin_amd64.tar.gz",
-        verified: "github.com/tunr-dev/tunr"
-      sha256 "2e96ada792af8fb64aef1e647a0cfee93ed73c014aa2af28ba78c90af75e6f72"
+      url "https://github.com/tunr-dev/tunr/releases/download/v#{version}/tunr_#{version}_darwin_amd64.tar.gz"
+      sha256 "5200f25ce3470b2bf359c0ad8247ea0d6b2f465de5981ee5ec39b9fa583bb75a"
     end
     on_arm do
-      url "https://github.com/tunr-dev/tunr/releases/download/v#{version}/tunr_#{version}_darwin_arm64.tar.gz",
-        verified: "github.com/tunr-dev/tunr"
-      sha256 "453fd2362e51fa60b3942d6b5b6f652b77e504d131fb016b55fc5ce36aa0dfe9"
+      url "https://github.com/tunr-dev/tunr/releases/download/v#{version}/tunr_#{version}_darwin_arm64.tar.gz"
+      sha256 "a29e0b34e44bde68f7ac1ffc88b747d020903deba7befc1791addfaeee2d10b7"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/tunr-dev/tunr/releases/download/v#{version}/tunr_#{version}_linux_amd64.tar.gz",
-        verified: "github.com/tunr-dev/tunr"
-      sha256 "2545b57cdcd4b45112a3a6cc8967ee59eb24c8ceb2da4a547d39f50c5745fa30"
+      url "https://github.com/tunr-dev/tunr/releases/download/v#{version}/tunr_#{version}_linux_amd64.tar.gz"
+      sha256 "76405f0a7ace7f4383f8b91a9b452f44e2de896c6b8486a7ed55f74409b2d84b"
     end
     on_arm do
-      url "https://github.com/tunr-dev/tunr/releases/download/v#{version}/tunr_#{version}_linux_arm64.tar.gz",
-        verified: "github.com/tunr-dev/tunr"
-      sha256 "e9edbfd6999c3de56d28b00686880cf49cd6a7c70520c880be9caf8f98448a0f"
+      url "https://github.com/tunr-dev/tunr/releases/download/v#{version}/tunr_#{version}_linux_arm64.tar.gz"
+      sha256 "3a1f410e946576e96c9783941437e94703b950e255ba23d1bcf884bad27a9a13"
     end
   end
 
